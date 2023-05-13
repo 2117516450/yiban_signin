@@ -19,6 +19,8 @@
 
 - - - 
 
+下载请到https://github.com/2117516450/yiban-signin/releases
+
 ### 实现功能
 
 - [x] 易班晚签
