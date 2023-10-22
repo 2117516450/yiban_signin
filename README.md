@@ -166,12 +166,21 @@
 ```
 
 # 环境
+## Windows
 已封装`exe` 已在`Windows11` `Windows10`上测试通过（理论上全Windows通用）
 待Windows脚本完全正常后开始制作linux脚本
+## Linux
+待制作
+## Docker
+待制作
 
 # 运行方式
-
+## Windows
 双击 `易签.exe` 后，会自动在目录下生成`user_status.json`文件，填写`user_status.json`文件后重新运行程序即可开始签到
+## Linux
+待制作
+## Docker
+待制作
 
 - - -
 
