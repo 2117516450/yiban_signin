@@ -22,7 +22,7 @@
 下载请到https://github.com/2117516450/yiban-signin/releases
 
 此脚本已开源部分代码及制作方式：
-~~https://www.wcyuns.cn/archives/%E6%98%93%E7%8F%AD%E6%99%9A%E7%AD%BE%E8%84%9A%E6%9C%AC~~ 
+https://www.wcyuns.cn/archives/yiban
 
 此脚本将视情开源所有代码
 - - - 
