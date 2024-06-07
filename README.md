@@ -189,6 +189,8 @@ https://www.wcyuns.cn/archives/yiban
         "pushplus(推送加)是集成了微信、短信、邮件、企业微信、HiFlow连接器、钉钉、飞书等渠道的信息推送平台",
         "为使用方便，强烈建议注册并填写获取到的token，可以很方便的获取签到成功状态"
     ],
+    "log": "debug",
+    "#log-日志说明": "OFF(关闭)|INFO(信息)|debug(调试)",
     "config_version": "2.1.0"
 }
 ```
