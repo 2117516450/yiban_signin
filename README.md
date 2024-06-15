@@ -31,7 +31,9 @@ https://www.wcyuns.cn/archives/yiban
 - [x] 自动更新
 - [x] 签到结果微信推送
 - [ ] 多线程签到（多用户）
-
+```diff
+- 图片签到有校内和校外之分，目前仅支持校外
+```
 #### 如果您的学校不支持此脚本或在使用中有任何问题，请提交Issues联系我
 ```mermaid
 graph TD;
