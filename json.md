@@ -1,3 +1,45 @@
+## json中的配置项详解
+
+### user
+
+user中存储用户的信息，目前存储了`账号` `密码` `设备型号` `设备唯一识别码`
+
+其中：
+- `user` 填写账户名
+- `password` 填写密码
+- `PhoneModel` 填写校本化内绑定的设备型号
+- `PhoneCode` 填写本化内绑定的设备唯一识别码
+- `pushplustoken` 填写推送的key
+  
+如果你的学校有绑定设备，仅能在绑定的设备是签到，才需关注`PhoneModel`及`PhoneCode`
+
+目前脚本可自动获取`PhoneModel`及`PhoneCode`，包含安卓及苹果机型，非不要也不要填写，以免影响程序运行
+#### 范例：
+```json
+    "user": [
+        {
+            "user": "",
+            "password": "",
+            "PhoneModel": "",
+            "PhoneCode": "",
+            "pushplustoken": ""
+        }
+    ],
+```
+
+### LngLat
+
+LngLat中存储签到的位置信息，目前存储了`经度` `纬度` `详细地址` `签到上传的文字(为什么不在范围内签到)` `图片地址`
+
+其中：
+- `stat` 填写是否强制使用配置文件的地址签到
+- `lon` 填写经度
+- `lat` 填写纬度
+- `Adders` 填写详细地址
+- `Reason` 签到上传的文字(为什么不在范围内签到)
+- `photopath` 图片地址
+  
+### 完整空配置文件
 ```json
 {
     "#-说明1": "修改本文件必看",
