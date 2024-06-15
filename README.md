@@ -74,9 +74,8 @@ graph TD;
 待制作
 
 # 配置脚本
-```diff
-+ 详细配置详解请到：
-```
+详细配置详解请到： [json配置](https://github.com/2117516450/yiban-signin/blob/main/json.md)
+
 脚本使用已经尽量简便化
 
 基础使用只需要在配置中填写易班的账号密码
