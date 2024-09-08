@@ -7,11 +7,13 @@
 * 使用此脚本所造成的一切后果您应当明白，包括但不限于：
 * 账号被封停
 * 您个人被给予相关处罚
-> 使用并复制了此脚本，则默认视为您`已经接受`了此免责声明。请仔细阅读
+> 使用并复制此脚本，则默认视为您`已经接受`了此免责声明。请仔细阅读
 
-## [脚本支持列表点此](https://github.com/2117516450/yiban-signin/?tab=readme-ov-file#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E)
+### [脚本支持列表点此](https://github.com/2117516450/yiban-signin/?tab=readme-ov-file#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E)
 - - - 
-## [下载点此](https://github.com/2117516450/yiban-signin/releases)
+### [下载点此](https://github.com/2117516450/yiban-signin/releases)
+- - - 
+### [程序使用帮助|讨论](https://github.com/2117516450/yiban-signin/issues/10)
 - - - 
 此脚本已开源部分代码及制作方式/思路：
 https://www.wcyuns.cn/archives/yiban
