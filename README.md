@@ -32,7 +32,7 @@ https://www.wcyuns.cn/archives/yiban
   - [X] 图片签到
 - [x] 自动更新
 - [x] 签到结果微信推送
-- [ ] 多线程签到（多用户）
+- [ ] 多线程签到（多用户）(已完成，正在稳定性测试)
 ```diff
 - 图片签到有校内和校外之分，目前仅测试过校外
 ```
@@ -69,13 +69,13 @@ graph TD;
 已封装`exe` 已在`Windows11` `Windows10`上测试通过（理论上全Windows通用）
 待Windows脚本完全正常后开始制作linux脚本
 ## Linux
-待制作
+已测试编译可行，待多线程发布后更新
 
 # 运行方式
 ## Windows
 双击 `易签.exe` 后，会自动在目录下生成`user_status.json`文件，填写`user_status.json`文件后重新运行程序即可开始签到
 ## Linux
-待制作
+已测试编译可行，待多线程发布后更新
 
 # 配置脚本
 详细配置详解请到： [json配置](https://github.com/2117516450/yiban-signin/blob/main/json.md)
