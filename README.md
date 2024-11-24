@@ -100,9 +100,9 @@ graph TD;
 
 # 运行方式
 ## Windows
-双击 `易签.exe` 后，会自动在目录下生成`user_status.json`文件，填写`user_status.json`文件后重新运行程序即可开始签到
+双击 易签.exe 后，会自动在目录下生成 user_status.json 文件，填写 user_status.json 文件后重新运行程序即可开始签到
 ### Windows 下自动运行
-使用`任务计划程序` 详细配置请参照[任务计划程序启动闪退](https://github.com/2117516450/yiban_signin/issues/13)
+使用 任务计划程序  详细配置请参照[任务计划程序启动闪退](https://github.com/2117516450/yiban_signin/issues/13)
 ## Linux
 运行./yiqian.bin即可，同目录下填写`user_status.json`文件
 ### Linux 下自动运行
