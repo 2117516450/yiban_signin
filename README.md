@@ -95,15 +95,19 @@ graph TD;
 # 运行环境
 ## Windows
 已封装`exe` 已在`Windows11` `Windows10`上测试通过（理论上全Windows通用）
-待Windows脚本完全正常后开始制作linux脚本
 ## Linux
-已测试编译可行，待多线程发布后更新
+已测试编译发布ARM及X86版本，如有其他需求或在使用过程中出现问题，请提交issues
 
 # 运行方式
 ## Windows
 双击 `易签.exe` 后，会自动在目录下生成`user_status.json`文件，填写`user_status.json`文件后重新运行程序即可开始签到
+### Windows 下自动运行
+使用`任务计划程序` 详细配置请参照[任务计划程序启动闪退](https://github.com/2117516450/yiban_signin/issues/13)
 ## Linux
-已测试编译可行，待多线程发布后更新
+运行./yiqian.bin即可，同目录下填写`user_status.json`文件
+### Linux 下自动运行
+都用上linux了应该自己会设置自动签到了
+注意：一定要`cd`到脚本所在目录，不然无法获取配置文件
 
 # 配置脚本
 详细配置详解请到： [json配置](https://github.com/2117516450/yiban-signin/blob/main/json.md)
