@@ -36,6 +36,7 @@
 ### [下载点此](https://github.com/2117516450/yiban-signin/releases)
 - - - 
 ### [程序使用帮助|讨论](https://github.com/2117516450/yiban-signin/issues/10)
+### 程序使用帮助|讨论QQ群 `643200955`
 - - - 
 此脚本已开源部分代码及制作方式/思路：
 https://www.wcyuns.cn/archives/yiban
