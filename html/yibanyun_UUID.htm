@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UUID 获取</title>
+</head>
+<body>
+    <div id="uuid-container">
+        <p id="uuid-text">正在获取UUID...</p>
+    </div>
+    <script>
+        document.addEventListener("YibanDeviceReady", function() {
+            yiban.getUUID(function(uuid) {
+                document.getElementById('uuid-text').textContent = 'UUID: ' + uuid;
+            });
+        });
+        if (typeof yiban === 'undefined' || !yiban.getUUID) {
+            document.getElementById('uuid-text').textContent = '非易班app';
+        }
+    </script>
+</body>
+</html>
