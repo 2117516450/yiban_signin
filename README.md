@@ -179,7 +179,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
-            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看https://github.com/2117516450/yiban_signin?tab=readme-ov-file#%E5%AD%97%E6%AE%B5%E8%A7%A3%E6%9E%90",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -207,7 +207,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
-            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看https://github.com/2117516450/yiban_signin?tab=readme-ov-file#%E5%AD%97%E6%AE%B5%E8%A7%A3%E6%9E%90",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -228,7 +228,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
-            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看https://github.com/2117516450/yiban_signin?tab=readme-ov-file#%E5%AD%97%E6%AE%B5%E8%A7%A3%E6%9E%90",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -366,7 +366,7 @@ graph TD;
             "PhoneModel": "这里填用户的设备编号(不填则自动获取)",
             "pushplustoken": "这里填pushplus(推送加)的token（如不使用可以不填）(务必填在引号内)",
             "yiqiandao_name": "这里填易签到的签到模块（中文）非易签到用户不填",
-            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看https://github.com/2117516450/yiban_signin?tab=readme-ov-file#%E5%AD%97%E6%AE%B5%E8%A7%A3%E6%9E%90",
             "other": "其他易班内模块(暂未开发)",
             "record_cancel": "模块_销假（暂未开放）",
             "LngLat": {
@@ -389,7 +389,7 @@ graph TD;
             "PhoneModel": "这里填用户1的设备编号(不填则自动获取)",
             "pushplustoken": "这里填pushplus(推送加)的token（如不使用可以不填）(务必填在引号内)",
             "yiqiandao_name": "这里填易签到的签到模块（中文）非易签到用户不填",
-            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看https://github.com/2117516450/yiban_signin?tab=readme-ov-file#%E5%AD%97%E6%AE%B5%E8%A7%A3%E6%9E%90",
             "other": "其他易班内模块(暂未开发)",
             "record_cancel": "模块_销假（暂未开放）",
             "LngLat": {
