@@ -134,7 +134,7 @@ graph TD;
 
     通过配置方式发送给用户-->程序退出;
 ```
-### 脚本基于python，由于在windows上进行开发编译，仅保证windows10+以上系统正常工作，linux（x86、arm）下不保证使用正常，mac系统暂未编译
+### 脚本基于python，由于在windows上进行开发编译，仅保证windows10+以上系统正常工作，linux_x86(CentOS Stream release 10)、linux_arm(香橙派)下编译后不保证脚本正常使用，mac系统暂未编译
 
 # 运行环境
 ## Windows
@@ -179,6 +179,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -206,6 +207,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -226,6 +228,7 @@ graph TD;
             "PhoneCode": "默认为空，填写手机识别码（如不清楚用途请留空）",
             "pushplustoken": "默认为空，填写pushplus推送加token",
             "yiqiandao_name": "默认为空，填写易伴云签到模块名称（使用易伴云签到必填，否则可能出现错签）",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
             "other": "默认为空，功能未开发，备用",
             "record_cancel": "默认为空，填1则进行销假",
             "LngLat": {
@@ -284,6 +287,7 @@ graph TD;
             "PhoneCode": "",
             "pushplustoken": "",
             "yiqiandao_name": "",
+            "yiqiandao_uuid": "",
             "other": "",
             "record_cancel": "",
             "LngLat": {
@@ -319,6 +323,7 @@ graph TD;
             "PhoneModel": "这里填用户的设备编号(不填则自动获取)",
             "pushplustoken": "这里填pushplus(推送加)的token（如不使用可以不填）(务必填在引号内)",
             "yiqiandao_name": "这里填易签到的签到模块（中文）非易签到用户不填",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
             "other": "其他易班内模块(暂未开发)",
             "record_cancel": "模块_销假（暂未开放）",
             "LngLat": {
@@ -341,6 +346,7 @@ graph TD;
             "PhoneModel": "这里填用户1的设备编号(不填则自动获取)",
             "pushplustoken": "这里填pushplus(推送加)的token（如不使用可以不填）(务必填在引号内)",
             "yiqiandao_name": "这里填易签到的签到模块（中文）非易签到用户不填",
+            "yiqiandao_uuid": "这里填易伴云的设备id，如签到时提示有设备绑定就需要填，填写方式请看github",
             "other": "其他易班内模块(暂未开发)",
             "record_cancel": "模块_销假（暂未开放）",
             "LngLat": {
