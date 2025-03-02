@@ -266,7 +266,50 @@ graph TD;
 
 需要修改`lon` `lat`和`Address`
 
-获取签到座标及地址可以参考: 
+获取签到座标及地址可以参考: [坐标拾取器 | 高德地图API](https://lbs.amap.com/tools/picker)
+
+## 字段解析
+
+`user` 填写用户名
+
+`password` 填写密码
+
+易班校本化签到仅需填写上面的用户名密码，其他签到请看下面的进阶配置：
+
+`user>enable` 是否启用此账户签到
+
+`pushplustoken` pushplus推送加token，用于签到结果微信推送
+
+`PhoneModel` 易班校本化的签到用手机型号（可自动获取，最好不填）
+
+`PhoneCode` 易班校本化的签到用手机识别码（可自动获取，最好不填）
+
+`LngLat` 里面是签到的地址参数。注意：有些自动获取能获取到经纬度但获取不到Adders（详细地址），可单独填写Adders，不用改LngLat内的其他参数
+
+`sleep` 如果不需要抢第一或者到点就签，可以用此参数，内填阿拉伯数字，单位分钟
+
+`record_cancel` 易班校本化销假参数，如果需要销假，此值改为1，默认销假1次，销假成功后自动变为0
+
+以下是`易签到（易伴云、易点名）`的参数填写
+
+`yiqiandao_name` 签到模块名称，如 2023级学生签到 
+![image](https://github.com/user-attachments/assets/74c28624-dc6f-46e1-b4d3-6f9336d433a9)
+
+`yiqiandao_uuid` 设备id，如果签到后提示签到失败，有绑定设备的情况下，就需要填写这个uuid，获取方法如下
+
+打开易班>我的>扫一扫
+![b78f285a05b0bddbcbbae43a63f7def8](https://github.com/user-attachments/assets/c1ac99fb-83a7-4244-babe-5b18fa65af14)
+
+扫描此二维码
+![435bffed915e9eb82f3d014496cc120e](https://github.com/user-attachments/assets/740f9bef-a5ed-4beb-bcb6-0133d16dfe64)
+
+点击继续访问
+![e3c02231971cb2657f11cef77c2c8e20](https://github.com/user-attachments/assets/231ec3b9-1511-43b8-8432-820620272039)
+
+最终会打开一个页面，其中UUID：后面的就是你的设备id
+
+填写为`"yiqiandao_uuid": "2294a0de650c12cb",`
+![image](https://github.com/user-attachments/assets/800f71db-2293-4baf-9968-b99bc25bae75)
 
 # 完整配置解析
 
