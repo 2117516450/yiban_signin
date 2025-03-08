@@ -1,23 +1,112 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UUID 获取</title>
-</head>
-<body>
-    <div id="uuid-container">
-        <p id="uuid-text">正在获取UUID...</p>
-    </div>
-    <script>
-        document.addEventListener("YibanDeviceReady", function() {
-            yiban.getUUID(function(uuid) {
-                document.getElementById('uuid-text').textContent = 'UUID: ' + uuid;
-            });
-        });
-        if (typeof yiban === 'undefined' || !yiban.getUUID) {
-            document.getElementById('uuid-text').textContent = '非易班app';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>易班API测试工具</title>
+  </head>
+  <body>
+    <div>
+      <script type="text/javascript">
+        // 获取位置信息
+        function getLocation() {
+          navigator.geolocation.getCurrentPosition(
+            (success) => {
+              var coords = success.coords;
+              document.getElementById("result_location").innerHTML = coords
+                ? "定位成功 ==> " + getCoordsInfo(coords)
+                : "定位失败";
+            },
+            (fail) => {
+              document.getElementById("result_location").innerHTML = "定位失败: " + fail.message;
+            },
+            {
+              enableHighAccuracy: true,
+              timeout: 5000,
+              maximumAge: 5 * 1000,
+            }
+          );
         }
-    </script>
-</body>
+
+        function getCoordsInfo(coords) {
+          return `<br/>经度(longitude): <span style="text-decoration:underline;color: green;">${coords.longitude}</span><br/>
+                  纬度(latitude): <span style="text-decoration:underline;color: green;">${coords.latitude}</span>
+                  <br/>经纬度精度(accuracy): <span style="text-decoration:underline;color: green;">${coords.accuracy}</span><br/>
+                  海拔: <span style="text-decoration:underline;color: green;">${coords.altitude}</span>
+                  <br/>海拔精度: <span style="text-decoration:underline;color: green;">${coords.altitudeAccuracy}</span><br/>
+                  方向: <span style="text-decoration:underline;color: green;">${coords.heading}</span>
+                  <br/>速度: <span style="text-decoration:underline;color: green;">${coords.speed}</span>`;
+        }
+
+        // 获取UUID
+        function getUUID() {
+          try {
+            yiban.getUUID((uuid) => {
+              document.getElementById("result_uuid").textContent = uuid;
+            });
+          } catch (err) {
+            document.getElementById("result_uuid").textContent = "系统或设备不支持";
+          }
+        }
+
+        // 解析设备信息并显示
+        function displayDeviceInfo(deviceInfo) {
+          const deviceInfoHTML = `
+            <br/>手机型号: <span style="text-decoration:underline;color: green;">${deviceInfo.deviceModel}</span>
+            <p style="word-wrap:break-word;">此处为你的设备型号(下划线绿色部分)易班校本化的设备绑定的设备型号为此值</p>
+            <p style="word-wrap:break-word;">下面的部分没什么用，仅供测试</p>
+            <br/>易班应用版本: <span style="text-decoration:underline;color: green;">${deviceInfo.appVersion}</span>
+            <br/>手机系统版本: <span style="text-decoration:underline;color: green;">${deviceInfo.systemVersion}</span>
+            <br/>屏幕宽度: <span style="text-decoration:underline;color: green;">${deviceInfo.screenWidth}</span>
+            <br/>屏幕高度: <span style="text-decoration:underline;color: green;">${deviceInfo.screenHeight}</span>
+            <br/>状态栏高度: <span style="text-decoration:underline;color: green;">${deviceInfo.statusBarHeight}</span>
+            <br/>像素比: <span style="text-decoration:underline;color: green;">${deviceInfo.pixelRatio}</span>
+          `;
+          document.getElementById("result_device_info").innerHTML = deviceInfoHTML;
+        }
+
+        // 获取设备信息
+        function getDeviceInfo() {
+          try {
+            yiban.getDeviceInfo((res) => {
+              displayDeviceInfo(res); // 解析并显示设备信息
+            });
+          } catch (err) {
+            document.getElementById("result_device_info").textContent = "系统或设备不支持";
+          }
+        }
+
+        // 页面加载时自动获取信息
+        document.addEventListener("DOMContentLoaded", function () {
+          getLocation(); // 自动获取位置坐标
+          document.addEventListener("YibanDeviceReady", function () {
+            getUUID(); // 获取UUID
+            getDeviceInfo(); // 获取并解析设备信息
+          });
+        });
+      </script>
+    </div>
+
+    <div>
+      <b>设备UUID：</b>
+      <span id="result_uuid" style="text-decoration:underline;color: green;">正在获取设备UUID...</span>
+      <p style="word-wrap:break-word;">此处为你的设备id(下划线绿色部分)易班校本化的设备绑定Code为此值；易伴云签到提示非绑定设备时需要此值</p>
+    </div>
+
+    <div>
+      <b>设备信息：</b>
+      <span id="result_device_info">正在获取设备信息...</span>
+    </div>
+
+    <div>
+      <b>位置信息（用于参考签到位置，不重要）：</b>
+      <span id="result_location">正在获取位置信息...</span>
+    </div>
+
+    <style>
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
 </html>
