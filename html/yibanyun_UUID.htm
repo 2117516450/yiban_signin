@@ -51,8 +51,11 @@
 
         // 解析设备信息并显示
         function displayDeviceInfo(deviceInfo) {
+          // Replace ":" with "-" in deviceModel
+          const deviceModel = deviceInfo.deviceModel.replace(":", "-");
+          
           const deviceInfoHTML = `
-            <br/>手机型号: <span style="text-decoration:underline;color: green;">${deviceInfo.deviceModel}</span>
+            <br/>手机型号: <span style="text-decoration:underline;color: green;">${deviceModel}</span>
             <p style="word-wrap:break-word;">此处为你的设备型号(下划线绿色部分)易班校本化的设备绑定的设备型号为此值</p>
             <p style="word-wrap:break-word;">下面的部分没什么用，仅供测试</p>
             <br/>易班应用版本: <span style="text-decoration:underline;color: green;">${deviceInfo.appVersion}</span>
@@ -96,6 +99,7 @@
     <div>
       <b>设备信息：</b>
       <span id="result_device_info">正在获取设备信息...</span>
+      <p>此处为你的设备详细信息</p>
     </div>
 
     <div>
