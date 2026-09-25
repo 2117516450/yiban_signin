@@ -14,13 +14,8 @@ target.linux_arm_cli=yiqian_cli_linux_arm64|aba8c7f1361f9bca37f163dd740013fed707
 target.macos_intel_gui=yiqian_gui_macos_intel.dmg|92ceb046b81f7ae2bfa572f7fad49155e6d9740013104309e4bbfb3dc5cf660a|61654240
 ------------------------------------------------
 > 更新说明
-> 【Linux 运行依赖】界面版需要系统里的 Qt/xcb 运行库（Ubuntu 等发行版不是默认必装）。
-> 缺库时的表现：终端提示 Could not load the Qt platform plugin "xcb"，界面打不开。
-> 客户端**检测到缺库会自动装**（识别 apt / dnf / yum / zypper / pacman；
-> 非 root 用户会弹出系统授权窗口，输入登录密码即可；不想自动装可设 YIQIAN_NO_AUTO_INSTALL=1）。
-> 手动安装（Debian / Ubuntu / Deepin / UOS）执行一次即可：
-> sudo apt update && sudo apt install -y libxcb1 libxcb-xinerama0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0 libxcb-randr0 libxcb-shape0 libxcb-xfixes0 libxcb-sync1 libxcb-shm0 libxcb-util1 libxcb-glx0 libxcb-xkb1 libx11-xcb1 libxkbcommon-x11-0
-> 其他发行版：装等价的 xcb 运行库（xcb-util-image / xcb-util-keysyms / xcb-util-renderutil / xcb-util-wm / xkbcommon-x11 / libX11-xcb / xcb-util）。
-> Wayland 桌面可临时绕过（不用装库也能先跑起来）：QT_QPA_PLATFORM=wayland ./易签
+> v20260925更新说明
+> 1、修复mac gui下的使用问题
+> 2、修复linux gui下的使用问题
 - 项目地址 https://github.com/2117516450/yiban_signin/
 ================================================
